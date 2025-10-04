@@ -15,21 +15,26 @@ https://docs.google.com/spreadsheets/d/1ARKIuq1dIcJgQTbjOMQeKqUPB_NmbB83uMQwRHBR
 ## Our Data Fusion Logic
 
 The central challenge was synthesizing data from three complex, disparate sources into a single, reliable forecast. Our methodology successfully combines these inputs:
-              -> NASA TEMPO Satellite Data (Nitrogen Dioxide - NO 2 ): Provides the macro-level "Big Picture"                       necessary to track the movement of pollution plumes across broad regions.
-              -> Local Ground Station Readings (Particulate Matter - PM 2.5 ): Measures the real impact at street                   level, identifying the most immediate health threat.
-              -> Local Weather Data (Wind Speed and Direction): Serves as the predictive variable, allowing us to                   simulate where pollution will travel over the next four hours.
+    -> NASA TEMPO Satellite Data (Nitrogen Dioxide - NO 2 ): Provides the macro-level "Big Picture"                       necessary to track the movement of pollution plumes across broad regions.
+             
+   ->Local Ground Station Readings (Particulate Matter - PM 2.5 ): Measures the real impact at street                   level, identifying the most immediate health threat.
+              
+   -> Local Weather Data (Wind Speed and Direction): Serves as the predictive variable, allowing us to                   simulate where pollution will travel over the next four hours.
 
 Core Logic: We integrated these inputs using a weighted formula to create a robust Air Quality Index (AQI) prediction model, demonstrating how satellite data directly enhances the accuracy and timeliness of the final forecast.
 
 ## Key Features of ClearSkies
 
 -> Actionable Health Notifications: We transform complex AQI numbers into immediate, clear advice (e.g., "High Risk: Stay Indoors"), enabling prompt public response.
+
 -> Hyper-Local Forecast: The color-coded map provides a detailed grid visualization, pinpointing exactly where and when air quality is expected to deteriorate in the next few hours.
+
 -> Scalable Architecture: Built as a no-code prototype, the system uses separate, modular tools, proving the concept is immediately ready for production-level scaling using cloud services and machine learning for enhanced accuracy.
 
 ## Repository Contents
 
 -> PITCH_DECK.pdf: Our full presentation slides detailing the project's problem, solution, and future roadmap.
+
 -> TEMPO_Extraction_Notes.txt: Documentation outlining our process for successfully integrating the raw NASA TEMPO data stream into our forecasting model.
 
 
