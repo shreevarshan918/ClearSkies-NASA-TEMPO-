@@ -33,7 +33,6 @@ Core Logic: We integrated these inputs using a weighted formula to create a robu
 
 ## Repository Contents
 
--> PITCH_DECK.pdf: Our full presentation slides detailing the project's problem, solution, and future roadmap.
 
 -> TEMPO_Extraction_Notes.txt: Documentation outlining our process for successfully integrating the raw NASA TEMPO data stream into our forecasting model.
 
