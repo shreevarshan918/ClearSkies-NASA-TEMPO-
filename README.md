@@ -1,33 +1,32 @@
-# ClearSkies-NASA-TEMPO-
-Integrating NASA TEMPO data with ground measurements and cloude services for hyper-local air quality forcasting.
+# ClearSkies
 
-  # ClearSkies: A Humanitarian Call to Action
-  ## NASA TEMPO Air Quality Monitoring Hackathon Submission
- ### Our Purpose: Protecting the Vulnerable
-Every year, millions of people—especially children, the elderly, and those with existing health issues—suffer because they don't know when the air will be dangerous. Our mission with ClearSkies is simple: to transform complex satellite data into a clear, immediate warning that anyone can understand, allowing families to take action and stay safe.
- 
-   The Lifeline: See the Live App
-This is the tool we built to give people back control over their health. It is a working prototype dashboard.
-[>> CLICK HERE TO INTERACT WITH THE CLEARSKIES DASHBOARD <<]([INSERT YOUR LOOKER STUDIO PUBLIC LINK HERE])
+## ClearSkies-NASA-TEMPO-
 
  
- Our Method: Blending Data to Save Lives
-We had to bring together three different sources of information to create a truly protective forecast. This blend gives us the full picture, from the massive sweep of the satellite to the air a child is breathing right now.
-| Data Layer           |     Source           |         The Human Value |
-| 1. NASA TEMPO        |   Satellite NO2      | Seeing the Threat: Shows us where invisible pollution clouds are moving across entire regions—the large-scale incoming danger. |
-| 2. Ground Stations   |          PM(2.5)       | Measuring the Impact: Gives us the exact number for the deadliest pollutant at street level, which enters the bloodstream. |
-| 3. Weather           |       Wind Speed     | Predicting the Danger Zone: Helps us anticipate where that pollution will be pushed in the next few hours, giving families time to prepare. |
-
- The Forecasting Logic
-Our simple formula proves that blending these three inputs results in a better prediction of the Air Quality Index (AQI). This logic is ready to be scaled up to protect all of North America.
-
- 
- Our Core Humanitarian Features
-->The Clear Warning: We don't just show a confusing number. We deliver an Actionable Health Notification—a simple, color-coded message (like "High Risk: Sensitive Groups Must Remain Indoors") that saves a parent from guessing.
-->Hyper-Local Focus: The map shows the forecast in a small, street-by-street grid. This is about ensuring a child's school or an elderly person's home is individually monitored.
-->An Honest Start: We successfully used the complex NASA TEMPO data by finding a smart way to read it (details in TEMPO_Extraction_Notes.txt). We built this simple prototype quickly so the life-saving concept could be demonstrated immediately.
-
- 
- Repository Contents
- * PITCH_DECK.pdf: Our full presentation, focusing on the human need for this tool.
- * DATA_SOURCES/: The folder holding the data samples that powered this humanitarian forecast.
+   Our Submission for the NASA TEMPO Air Quality Monitoring Challenge
+The Idea (And Why It Works)
+We noticed a gap: The air quality reports people see are either too late or too general. Our goal was to build a system, ClearSkies, that proves you can use huge satellite data (NASA TEMPO) and blend it with local ground readings to create a fast, super-local forecast.
+It's about getting ahead of the pollution plume to keep vulnerable people safe.
+The Live App (Our Deliverable)
+This is the functional prototype we built in the short hackathon window. It shows our data fusion and features in action.
+[>> CLICK HERE TO SEE THE LIVE CLEARSKIES DASHBOARD <<]([INSERT YOUR LOOKER STUDIO PUBLIC LINK HERE])
+How We Hacked the Data Together
+The biggest challenge was pulling data from three complex places and making them talk. We found a way to combine them into one smart forecast:
+ * NASA TEMPO Satellite Data (NO2):
+   * Source: Satellite NO2
+   * Why We Needed It: The Big Picture. We used this to track the movement of pollution across North America—crucial for any prediction! (See TEMPO_Extraction_Notes.txt for how we got the numbers.)
+ * Ground Station Measurements:
+   * Source: PM(2.5)
+   * Why We Needed It: The Real Impact. This is the most dangerous stuff. It gives us the specific health threat at street level.
+ * Local Weather Data:
+   * Source: Wind Speed
+   * Why We Needed It: The Prediction. Wind is the key. We used it to simulate where the pollution will travel over the next few hours.
+The Core Logic
+We put those three inputs into a simple weighted formula (our prediction model) to prove that the blend works. It shows how the TEMPO satellite data directly improves the accuracy of the final {AQI} forecast.
+Our Favorite Features
+ * Stop Guessing: Instead of just showing a number, we deliver an Actionable Health Notification (like "High Risk: Stay Indoors"). This turns complex data into immediate, clear advice.
+ * Hyper-Local Forecast: The map displays a clear, color-coded grid to show exactly how bad the air quality will be in the next few hours.
+ * Built to Scale: Even though this is a no-code prototype, we set it up using simple, separate data and visualization tools. This structure proves the concept is ready to be immediately scaled up using Python and deployed on a real cloud service.
+Repository Contents
+ * PITCH_DECK.pdf: Our full presentation slides.
+ * TEMPO_Extraction_Notes.txt: Our honest account of how we successfully integrated the NASA TEMPO data without getting stuck on complex coding.
