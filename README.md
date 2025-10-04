@@ -8,7 +8,8 @@ The Live App (Our Deliverable)
 This is the functional prototype we built in the short hackathon window. It shows our data fusion and features in action.
 https://docs.google.com/spreadsheets/d/1ARKIuq1dIcJgQTbjOMQeKqUPB_NmbB83uMQwRHBRErQ/edit?usp=sharing
 [>> CLICK HERE TO SEE THE LIVE CLEARSKIES DASHBOARD <<]
-([INSERT YOUR LOOKER STUDIO PUBLIC LINK HERE])
+https://lookerstudio.google.com/reporting/e57e0415-8126-4aa4-ad48-e934dc0178fb
+(LOOKER STUDIO PUBLIC LINK HERE)
 How We Hacked the Data Together
 The biggest challenge was pulling data from three complex places and making them talk. We found a way to combine them into one smart forecast:
  * NASA TEMPO Satellite Data (NO2):
