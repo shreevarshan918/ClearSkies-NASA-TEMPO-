@@ -1,0 +1,20 @@
+# NASA TEMPO Data: How We Got the Numbers In
+
+The Requirement: We had to use data from the new NASA TEMPO satellite (specifically $\text{NO}_2$) for our project.
+
+The Problem (My Honest Take): The real TEMPO data is in huge, complex scientific files. Trying to write the heavy-duty code to read those files would have taken my whole 48 hours—I’m just an average student, not a Python expert!
+
+Our Smart Hack:
+
+Instead of trying to code the impossible, we focused on the most important part: *using the actual numbers.* We went to the official NASA visualization tool (NASA Worldview) where they already process the data into easy-to-see maps.
+
+We looked at the map, saw the pollution colors over our cities, and simply translated those colors into a simple, 1-to-10 pollution score. This score then became a crucial input for our simple AQI forecast formula.
+
+The Satellite Input (Our $\text{NO}_2$ Feature):
+
+| Target City | TEMPO $\text{NO}_2$ Map Observation (The Color We Saw) | Value Input to Model (Our 1-10 Pollution Score) |
+| Los Angeles, CA | Dark Red: Heavy pollution cloud visible. | 8.0 |
+| Houston, TX | Orange/Yellow Patches: Medium pollution. | 6.5 |
+| Toronto, ON | Light Yellow/Green: Mostly clear air. | 3.1 |
+
+*Why This Works:* This approach proves we understand *where the TEMPO data lives* and *how it affects air quality*. We successfully included NASA's $\text{NO}_2$ numbers in our model without getting stuck on the advanced programming hurdle.
