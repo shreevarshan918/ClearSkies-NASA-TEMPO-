@@ -6,7 +6,9 @@ We noticed a gap: The air quality reports people see are either too late or too 
 It's about getting ahead of the pollution plume to keep vulnerable people safe.
 The Live App (Our Deliverable)
 This is the functional prototype we built in the short hackathon window. It shows our data fusion and features in action.
-[>> CLICK HERE TO SEE THE LIVE CLEARSKIES DASHBOARD <<]([INSERT YOUR LOOKER STUDIO PUBLIC LINK HERE])
+https://docs.google.com/spreadsheets/d/1ARKIuq1dIcJgQTbjOMQeKqUPB_NmbB83uMQwRHBRErQ/edit?usp=sharing
+[>> CLICK HERE TO SEE THE LIVE CLEARSKIES DASHBOARD <<]
+([INSERT YOUR LOOKER STUDIO PUBLIC LINK HERE])
 How We Hacked the Data Together
 The biggest challenge was pulling data from three complex places and making them talk. We found a way to combine them into one smart forecast:
  * NASA TEMPO Satellite Data (NO2):
